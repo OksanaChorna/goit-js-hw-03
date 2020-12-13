@@ -107,12 +107,3 @@ const account = {
     return total;
   },
 };
-
-console.log(account.getBalance()); // 0
-account.deposit(100);
-console.log(account.getBalance()); // 100
-account.withdraw(99);
-console.log(account.getBalance()); // 1
-account.withdraw(100);
-console.log(account.getTransactionDetails(2));
-console.log(account.getTransactionTotal(Transaction.WITHDRAW));
