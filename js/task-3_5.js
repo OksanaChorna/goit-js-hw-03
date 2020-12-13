@@ -7,6 +7,12 @@ const products = [
 
 const getAllPropValues = function (arr, prop) {
   // твой код
+  let values = [];
+  for (const product of arr) {
+    if (product[prop] === undefined) continue;
+    values.push(product[prop]);
+  }
+  return values;
 };
 
 /*
