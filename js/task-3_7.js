@@ -44,9 +44,9 @@ const account = {
       return;
     }
 
-    const trans = this.createTransaction(amount, Transaction.DEPOSIT);
+    const transaction = this.createTransaction(amount, Transaction.DEPOSIT);
     this.balance += amount;
-    this.transactions.push(trans);
+    this.transactions.push(transaction);
   },
 
   /*
@@ -69,9 +69,9 @@ const account = {
       return;
     }
 
-    const trans = this.createTransaction(amount, Transaction.WITHDRAW);
+    const transaction = this.createTransaction(amount, Transaction.WITHDRAW);
     this.balance -= amount;
-    this.transactions.push(trans);
+    this.transactions.push(transaction);
   },
 
   /*
